@@ -1,0 +1,115 @@
+<!-- activity_main.xml -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/textHead"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Crop Recommondation"
+        android:layout_marginTop="10dp"
+        android:textSize="18dp"
+        />
+    <!-- Input parameters -->
+    <EditText
+        android:id="@+id/editTextN"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textHead"
+        android:hint="@string/ratio_of_nitrogen_content_in_soil"
+        android:inputType="number|numberDecimal"
+        android:minHeight="48dp" />
+
+    <EditText
+        android:id="@+id/editTextP"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextN"
+        android:layout_marginTop="8dp"
+        android:inputType="number|numberDecimal"
+        android:hint="@string/ratio_of_phosphorous_content_in_soil"
+        android:minHeight="48dp" />
+
+    <EditText
+        android:id="@+id/editTextK"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextP"
+        android:layout_marginTop="8dp"
+        android:inputType="number|numberDecimal"
+        android:hint="@string/ratio_of_potassium_content_in_soil"
+        android:minHeight="48dp" />
+
+    <EditText
+        android:id="@+id/editTextTemperature"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextK"
+        android:layout_marginTop="8dp"
+        android:inputType="number|numberDecimal"
+        android:hint="@string/temperature_in_degree_celsius"
+        android:minHeight="48dp" />
+
+    <EditText
+        android:id="@+id/editTextHumidity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextTemperature"
+        android:layout_marginTop="8dp"
+        android:inputType="number|numberDecimal"
+        android:hint="@string/relative_humidity_in"
+        android:minHeight="48dp" />
+
+    <EditText
+        android:id="@+id/editTextPh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextHumidity"
+        android:layout_marginTop="8dp"
+        android:hint="@string/ph_value_of_the_soil"
+        android:inputType="number|numberDecimal"
+        android:minHeight="48dp"
+        android:layout_marginBottom="8dp" />
+
+    <EditText
+        android:id="@+id/editTextRainfall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextPh"
+        android:layout_marginTop="8dp"
+        android:inputType="number|numberDecimal"
+        android:hint="@string/rainfall_in_mm"
+        android:minHeight="48dp"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Button to trigger prediction -->
+    <Button
+        android:id="@+id/buttonPredict"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextRainfall"
+        android:layout_marginTop="16dp"
+        android:text="Predict"/>
+
+    <!-- Button to reset input fields -->
+    <Button
+        android:id="@+id/buttonReset"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonPredict"
+        android:layout_marginTop="16dp"
+        android:text="Reset"
+        />
+
+    <!-- Prediction result -->
+    <TextView
+        android:id="@+id/textViewResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonReset"
+        android:layout_marginTop="16dp"/>
+</RelativeLayout>

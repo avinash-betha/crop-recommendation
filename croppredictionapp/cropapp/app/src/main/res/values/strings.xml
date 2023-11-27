@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">crop app</string>
+    <string name="rainfall_in_mm">rainfall in mm</string>
+    <string name="ph_value_of_the_soil">ph value of the soil</string>
+    <string name="relative_humidity_in">relative humidity in %</string>
+    <string name="temperature_in_degree_celsius">temperature in degree Celsius</string>
+    <string name="ratio_of_potassium_content_in_soil">ratio of Potassium content in soil</string>
+    <string name="ratio_of_phosphorous_content_in_soil">ratio of Phosphorous content in soil</string>
+    <string name="ratio_of_nitrogen_content_in_soil">ratio of Nitrogen content in soil</string>
+</resources>
